@@ -26,9 +26,9 @@
      * https://github.com/Patternslib/logging
      */
 
-    var parser = new Parser('hansontable');
+    var parser = new Parser('handsontable');
     /* If you'd like your pattern to be configurable via the
-     * data-pat-hansontable attribute, then you need to
+     * data-pat-handsontable attribute, then you need to
      * specify the available arguments here, by calling parser.addArgument.
      *
      * The addArgument method takes the following parameters:
@@ -49,18 +49,18 @@
         /* The name is used to store the pattern in a registry and needs to be
          * unique.
          */
-        name: 'hansontable',
+        name: 'handsontable',
         /* The trigger specifies the selector (CSS or jQuery) which Patternslib
          * will scan for in order to identifiy and initialize this pattern.
          */
-        trigger: ".pat-hansontable",
+        trigger: ".pat-handsontable",
 
         init: function initUndefined () {
             this.options = parser.parse(this.$el);
             /* this.options will now contain the configured pattern properties
              * you've registered with the parser.addArgument method.
              *
-             * If the user provided any values via the data-pat-hansontable
+             * If the user provided any values via the data-pat-handsontable
              * attribute, those values will already be set.
              */
         }
